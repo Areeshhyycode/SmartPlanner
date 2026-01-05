@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="globeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="landGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#16A34A"/>
+    </linearGradient>
+  </defs>
+  <!-- Globe background -->
+  <circle cx="32" cy="32" r="28" fill="url(#globeGradient)"/>
+  <!-- Globe shine -->
+  <ellipse cx="24" cy="22" rx="10" ry="8" fill="white" opacity="0.2"/>
+  <!-- Latitude lines -->
+  <ellipse cx="32" cy="32" rx="28" ry="10" fill="none" stroke="white" stroke-width="1.5" opacity="0.4"/>
+  <ellipse cx="32" cy="32" rx="28" ry="20" fill="none" stroke="white" stroke-width="1.5" opacity="0.3"/>
+  <!-- Longitude line -->
+  <ellipse cx="32" cy="32" rx="12" ry="28" fill="none" stroke="white" stroke-width="1.5" opacity="0.4"/>
+  <!-- Simplified continent shapes -->
+  <path d="M20 18 Q25 16 30 18 Q32 22 28 26 Q22 28 18 24 Q16 20 20 18Z" fill="url(#landGradient)" opacity="0.9"/>
+  <path d="M36 20 Q42 18 46 22 Q48 28 44 32 Q38 30 36 24 Q34 22 36 20Z" fill="url(#landGradient)" opacity="0.9"/>
+  <path d="M24 36 Q30 34 36 38 Q38 44 32 48 Q26 46 24 40 Q22 38 24 36Z" fill="url(#landGradient)" opacity="0.9"/>
+  <!-- Small airplane -->
+  <g transform="translate(44, 12) rotate(45)">
+    <path d="M0 4 L8 0 L8 2 L2 4 L8 6 L8 8 L0 4Z" fill="white"/>
+    <path d="M1 2 L1 6 L3 4 Z" fill="white"/>
+  </g>
+  <!-- Globe border -->
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#1E40AF" stroke-width="2"/>
+</svg>
